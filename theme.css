@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    font-family: 'Roboto Slab', sans-serif;
+    color: #333;
+}
+
+.site-title {
+    background: SteelBlue;
+    color: white;
+    font-size: 3em;
+    margin: 0;
+    padding: 10px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+h2 {
+    color: RebeccaPurple;
+}
+
+.portrait {
+}
+
+.heart {
+    color: deeppink;
+}
+
+.quote-body {
+    background: plum;
+    padding: 10px;
+    border-radius: 5px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.quote-body p {
+    margin: 0;
+    border-left: 3px dashed lightgrey;
+    padding: 15px 0 15px 15px;
+}
+
+
+/* Screens 600px wide and larger */
+
+@media (min-width: 600px) {
+
+    .site-title {
+        background: sienna;
+        margin: 0 0 40px;
+    }
+
+    h2 {
+        color: Tomato;
+    }
+
+    .portrait {
+        border: 20px inset goldenrod;
+        transform: rotate(-3deg);
+        max-width: calc(100% - 40px);
+        margin: 40px auto;
+        box-shadow: 5px 5px 10px darkgrey;
+    }
+
+    .text-section {
+        font-size: 1.3em;
+    }
+
+    .quote-body {
+        background: SandyBrown;
+        padding: 20px;
+        border-radius: 10px;
+        line-height: 1.4;
+    }
+
+    .quote-body p {
+        border-left: 3px solid wheat;
+        padding-left: 30px;
+    }
+
+}
