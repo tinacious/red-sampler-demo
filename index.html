@@ -2,31 +2,74 @@
 <html>
 <head>
     <meta charset="utf-8">
+
+    <!--this is what will show up in search results, and what will be displaying-->
+    <!--in the browser tab when someone visits your page-->
     <title>My First Website</title>
+
+    <!--we want to include this viewport meta tag so that our page will act and render properly-->
+    <!--on devices and screens of all shapes and sizes-->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!--these two css files will add our styling which can be overridden by the custom colors and fonts-->
+    <!--that we come up with in the class-->
     <link rel="stylesheet" href="layout.css">
     <link rel="stylesheet" href="theme.css">
 </head>
 <body>
 
+    <!--we don't technically _need_ this page-wrapper here, but it is a common practice that allows us to control-->
+    <!--the overall style or default layout of the page without adding modifications to the body element-->
     <div class="page-wrapper">
 
+        <!--add a heading that will tell our visitors (and search engines!) what our page is about-->
+        <!--adding a class allows us to add styles like font-family, color, and size-->
+
+        <!--use your mom's, son's, dog's, or cat's name here as your page heading-->
         <h1 class="site-title">Bubbles</h1>
 
+        <!--adding a container div allows us to easily add some default clearing of float values that we're using-->
+        <!--for our desktop layout-->
         <div class="container">
+
+            <!--we could easily just put our image here on its own, but using these photo-section and text-section div lets us easily-->
+            <!--control the layout of the photo and text with our css-->
+            <!--by using media queries in our css, we can modify the layout based on screen size without having to modify any-->
+            <!--of our html "content" code-->
             <div class="photo-section">
+
+                <!--add a photo of your subject here-->
                 <img src="images/puppy.jpg" alt="A picture of Bubbles out for a stroll" class="portrait" />
             </div>
 
             <div class="text-section">
+                <!--we want to use a subheading (h2 here...) to denote to our visitors (and search engines!) that -->
+                <!--this is a sub-section of our main content as described by our h1 tag above-->
+
+                <!--add a subheading for the biography of your subject-->
                 <h2>Biography</h2>
+
+                <!--p is for "p"aragraph. this is a prime example of "programmers are lazy" (read: "efficient")-->
+
+                <!--add a couple of paragraphs to describe your subject-->
                 <p>
                     Bubbles is a very affectionate and loveable pup. Whenever you need hugs, she will be there to give you hugs.
                 </p>
                 <p>
                     Whenever you are eating, she will also be there for snacks.
                 </p>
+
+
+                <!--here we'll put another subheading under which we'll list the things we like best about our subject-->
                 <h2>Skills &amp; Attributes</h2>
+
+                <!--we can use a bulleted list to add a simple list of attributes to our page-->
+                <!--the style of bullets and positioning, indent, font-size and almost anything else-->
+                <!--can be modified with simple css-->
+                <!--this is an example of an unordered list.  there is also an element called <ol> </ol> which -->
+                <!--denotes an ordered list.  ordered lists use 1. 2. 3. 4... etc by default instead of bullets-->
+
+                <!--how do i love thee?  list the things you love best about your subject.-->
                 <ul>
                     <li>eating a lot</li>
                     <li>waking up too early</li>
@@ -36,8 +79,17 @@
                     <li>giving great cuddles <span class="heart">&hearts;</span></li>
                 </ul>
 
+                <!--lastly, we'll add a section for a quote that our subject is known for saying-->
                 <div class="quote-section">
+
+                    <!--tell everyone something that your subject says all the time...-->
                     <h2>Words of Wisdom</h2>
+
+                    <!--we'll use the blockquote element here to demonstrate an html element that is custom-made for-->
+                    <!--this specific purpose.  we'll add the quote-body class to it which will style it to fit-->
+                    <!--with our theme-->
+
+                    <!--inside a blockquote element, with a paragraph inside it, write a funny quote from your subject-->
                     <blockquote class="quote-body">
                         <p>
                             If you don't know what it is... Don'tcha put it in your mouth!
