@@ -40,7 +40,7 @@ At this point we should have a good idea of what we can do with a web page and s
 
 ### WTF is RWD
 * _quickly_ explain the why and what of responsive web design
-* add the `layout.css` and `theme.css` files provided in the repo *ABOVE THE CUSTOM CSS WE HAVE BUILT*
+* add the `layout.css` and `theme.css` files provided in the repo **ABOVE THE CUSTOM CSS WE HAVE BUILT**
 
 ### AWESOME SAUCE
 At this point we should have a fully responsive and somewhat beautiful web page that everyone
