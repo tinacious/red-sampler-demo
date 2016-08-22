@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.page-wrapper {
+}
+
+.portrait {
+    max-width: 100%;
+    display: block;
+    margin: 0;
+}
+
+.text-section {
+    padding: 10px;
+}
+
+
+@media (min-width: 600px) {
+
+    .page-wrapper {
+    }
+
+    .container:after {
+        display: block;
+        content: "";
+        clear: both;
+    }
+
+    .photo-section {
+        float: left;
+        width: 40%;
+    }
+
+    .text-section {
+        float: right;
+        width: 58%;
+    }
+
+}
